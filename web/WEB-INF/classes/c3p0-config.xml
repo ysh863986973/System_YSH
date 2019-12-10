@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+    <!-- 默认配置，如果没有指定则使用这个配置 -->
+    <default-config>
+        <property name="user">root</property>
+        <property name="password">ysh0307</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/system_ysh?useSSL=true</property>
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+
+        <!-- 数据库连接对象等待时间 -->
+        <property name="checkoutTimeout">30000</property>
+        <!-- 初始化Connection数据库连接对象个数 -->
+        <property name="initialPoolSize">3</property>
+        <!-- 数据库连接池中最大Connection连接个数 -->
+        <property name="maxPoolSize">100</property>
+        <!-- 数据库连接池中最少Connection连接个数 -->
+        <property name="minPoolSize">2</property>
+        <!-- 当前数据库连接池能够处理的最大SQL语句数量，能够处理的SQL语句搬运工个数 -->
+        <property name="maxStatements">200</property>
+    </default-config>
+</c3p0-config>
